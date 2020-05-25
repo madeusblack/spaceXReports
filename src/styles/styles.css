@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'DINPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Bold'), url('../fonts/DINPro-Bold_13934.woff') format('woff');
+    }
+body{
+    background-color: black;
+    color:white;
+    -webkit-font-smoothing:antialiased;
+    font-family:DINPro-Bold, Arial, Verdana, sans-serif;
+}
+.header__container{
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__container a{
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch:100%;
+    line-height:19.6px;
+    color:white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    overflow: hidden;
+    background: linear-gradient(to right, royalblue, royalblue 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    text-decoration-color:solid ;
+    transition: background-position 275ms ease;
+
+}
+.header__container a:hover{
+    background-position: 0 100%; 
+}
+.main__container{
+    justify-content: center;
+    display: grid;
+    padding: 1em;
+    column-gap: 10%;
+    grid-template-columns: 40% 40%;
+    row-gap: 1%;
+}
+.launch{
+    border:1px solid grey;
+    box-shadow: 10px 10px 31px -1px rgba(255,255,255,0.75);
+    transition: 450ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 33px;
+    padding: 1em;
+}
+.launch:hover{
+    box-shadow: 10px 10px 8px -1px rgba(255,255,255,0.75);
+
+   
+}
+
+.main__title{
+    display: flex;
+    justify-content: space-around;
+    height: 5em;
+}
